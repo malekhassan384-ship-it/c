@@ -1,0 +1,45 @@
+name: Windows Build
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - run: npm run test:unit
+      - run: npm run build
+      - name: Fetch official Stockfish (win32, GPL-compliant external binary)
+        run: node scripts/fetch-engine.mjs --os win32
+      - run: npm run dist -- --win
+      - name: Verify EXE exists
+        shell: pwsh
+        run: |
+          if (!(Test-Path "dist/ChessVanguard*.exe")) { exit 1 }
+          Get-ChildItem dist/ChessVanguard*.exe | Select-Object Name, Length
+      - name: Verify bundled engine files (outside asar)
+        shell: pwsh
+        run: |
+          $ok = Test-Path "dist/win-unpacked/resources/engines/win32"
+          $lic = Test-Path "dist/win-unpacked/resources/engines/COPYING.txt"
+          if (!$ok -or !$lic) { Write-Error "bundled engine or GPL license missing"; exit 1 }
+      - name: Generate checksums
+        shell: pwsh
+        run: |
+          Get-ChildItem dist/*.exe | ForEach-Object {
+            (Get-FileHash $_.FullName -Algorithm SHA256).Hash | Out-File "$($_.FullName).sha256"
+          }
+          Get-Content dist/*.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Chess-Vanguard-Windows
+          path: |
+            dist/*.exe
+            dist/*.sha256
