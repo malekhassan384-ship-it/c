@@ -1,0 +1,198 @@
+{
+  "generatedBy": "scripts/generate-puzzles.mjs (solver-proven)",
+  "count": 24,
+  "puzzles": [
+    {
+      "id": "m1-thematic-1",
+      "fen": "6k1/5ppp/8/8/8/8/5PPP/R5K1 w - - 0 1",
+      "mateIn": 1,
+      "theme": "back-rank",
+      "difficulty": 1,
+      "hintSquare": "a1"
+    },
+    {
+      "id": "m1-thematic-2",
+      "fen": "6k1/5ppp/8/8/8/8/8/4Q1K1 w - - 0 1",
+      "mateIn": 1,
+      "theme": "queen",
+      "difficulty": 1,
+      "hintSquare": "e1"
+    },
+    {
+      "id": "m1-thematic-3",
+      "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p2Q/2B1P3/8/PPPP1PPP/RNB1K1NR w KQkq - 4 4",
+      "mateIn": 1,
+      "theme": "tactics",
+      "difficulty": 1,
+      "hintSquare": "h5"
+    },
+    {
+      "id": "m1-thematic-4",
+      "fen": "6rk/6pp/7N/8/8/8/8/K7 w - - 0 1",
+      "mateIn": 1,
+      "theme": "knight",
+      "difficulty": 1,
+      "hintSquare": "h6"
+    },
+    {
+      "id": "m1-005",
+      "fen": "8/6R1/8/8/8/2K5/8/2k5 w - - 0 1",
+      "mateIn": 1,
+      "theme": "rook",
+      "difficulty": 1,
+      "hintSquare": "g7"
+    },
+    {
+      "id": "m1-006",
+      "fen": "6k1/8/6K1/8/8/5Q2/8/8 w - - 0 1",
+      "mateIn": 1,
+      "theme": "queen",
+      "difficulty": 1,
+      "hintSquare": "f3"
+    },
+    {
+      "id": "m1-007",
+      "fen": "8/8/8/8/R7/8/5K2/7k w - - 0 1",
+      "mateIn": 1,
+      "theme": "rook",
+      "difficulty": 1,
+      "hintSquare": "a4"
+    },
+    {
+      "id": "m1-008",
+      "fen": "8/8/8/k7/2K5/4Q3/8/8 w - - 0 1",
+      "mateIn": 1,
+      "theme": "queen",
+      "difficulty": 1,
+      "hintSquare": "e3"
+    },
+    {
+      "id": "m1-009",
+      "fen": "R7/8/8/8/8/8/8/5K1k w - - 0 1",
+      "mateIn": 1,
+      "theme": "rook",
+      "difficulty": 1,
+      "hintSquare": "a8"
+    },
+    {
+      "id": "m1-010",
+      "fen": "k7/8/1K6/8/2R5/8/8/8 w - - 0 1",
+      "mateIn": 1,
+      "theme": "rook",
+      "difficulty": 1,
+      "hintSquare": "c4"
+    },
+    {
+      "id": "m1-011",
+      "fen": "8/8/8/8/8/3K4/1Q6/4k3 w - - 0 1",
+      "mateIn": 1,
+      "theme": "queen",
+      "difficulty": 1,
+      "hintSquare": "b2"
+    },
+    {
+      "id": "m1-012",
+      "fen": "3Q4/8/8/8/8/k7/2K5/8 w - - 0 1",
+      "mateIn": 1,
+      "theme": "queen",
+      "difficulty": 1,
+      "hintSquare": "d8"
+    },
+    {
+      "id": "m1-013",
+      "fen": "8/8/8/8/8/6K1/7Q/5k2 w - - 0 1",
+      "mateIn": 1,
+      "theme": "queen",
+      "difficulty": 1,
+      "hintSquare": "h2"
+    },
+    {
+      "id": "m1-014",
+      "fen": "6Q1/8/8/8/8/5K2/7k/8 w - - 0 1",
+      "mateIn": 1,
+      "theme": "queen",
+      "difficulty": 1,
+      "hintSquare": "g8"
+    },
+    {
+      "id": "m1-015",
+      "fen": "k7/8/1K6/8/8/3R4/8/8 w - - 0 1",
+      "mateIn": 1,
+      "theme": "rook",
+      "difficulty": 1,
+      "hintSquare": "d3"
+    },
+    {
+      "id": "m1-016",
+      "fen": "8/5K1k/8/8/8/8/8/6R1 w - - 0 1",
+      "mateIn": 1,
+      "theme": "rook",
+      "difficulty": 1,
+      "hintSquare": "g1"
+    },
+    {
+      "id": "m2-001",
+      "fen": "8/8/8/8/2K5/k7/8/4R3 w - - 0 1",
+      "mateIn": 2,
+      "theme": "endgame",
+      "difficulty": 2,
+      "hintSquare": "e1"
+    },
+    {
+      "id": "m2-002",
+      "fen": "4k3/6K1/8/8/8/8/3R4/8 w - - 0 1",
+      "mateIn": 2,
+      "theme": "endgame",
+      "difficulty": 2,
+      "hintSquare": "g7"
+    },
+    {
+      "id": "m2-003",
+      "fen": "5R2/8/8/8/7k/5K2/8/8 w - - 0 1",
+      "mateIn": 2,
+      "theme": "endgame",
+      "difficulty": 2,
+      "hintSquare": "f8"
+    },
+    {
+      "id": "m2-004",
+      "fen": "8/8/8/8/R7/3K4/8/2k5 w - - 0 1",
+      "mateIn": 2,
+      "theme": "endgame",
+      "difficulty": 2,
+      "hintSquare": "a4"
+    },
+    {
+      "id": "m2-005",
+      "fen": "8/8/8/k1K5/6R1/8/8/8 w - - 0 1",
+      "mateIn": 2,
+      "theme": "endgame",
+      "difficulty": 2,
+      "hintSquare": "c5"
+    },
+    {
+      "id": "m2-006",
+      "fen": "8/2K5/8/k7/4R3/8/8/8 w - - 0 1",
+      "mateIn": 2,
+      "theme": "endgame",
+      "difficulty": 2,
+      "hintSquare": "c7"
+    },
+    {
+      "id": "m2-007",
+      "fen": "2k5/8/K7/8/8/8/4Q3/8 w - - 0 1",
+      "mateIn": 2,
+      "theme": "endgame",
+      "difficulty": 2,
+      "hintSquare": "e2"
+    },
+    {
+      "id": "m2-008",
+      "fen": "8/8/8/6R1/k7/8/2K5/8 w - - 0 1",
+      "mateIn": 2,
+      "theme": "endgame",
+      "difficulty": 2,
+      "hintSquare": "c2"
+    }
+  ]
+}

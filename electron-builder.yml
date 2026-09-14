@@ -1,0 +1,44 @@
+# Chess Vanguard — electron-builder configuration
+# © 2026 Malek Hassan Ashour
+appId: com.malekashour.chessvanguard
+productName: Chess Vanguard
+executableName: ChessVanguard
+copyright: Copyright © 2026 Malek Hassan Ashour — All Rights Reserved.
+
+directories:
+  output: dist
+  buildResources: assets
+
+files:
+  - build/**/*
+  - package.json
+  - "!**/*.map"
+
+# Stockfish binaries + license travel OUTSIDE the asar (GPL compliance:
+# unmodified standalone binaries, never linked).
+extraResources:
+  - from: resources/engines
+    to: engines
+    filter:
+      - "**/*"
+      - "!*.tmp"
+
+asar: true
+
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  artifactName: ChessVanguard-Setup.${ext}
+
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Chess Vanguard
+  uninstallDisplayName: Chess Vanguard
+
+publish: null

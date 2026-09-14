@@ -1,0 +1,31 @@
+CHESS VANGUARD — SOFTWARE LICENSE
+Copyright © 2026 Malek Hassan Ashour — All Rights Reserved.
+
+Chess Vanguard (this application's source code and user interface), including
+its independent chess rules engine (src/chess), user interface, academy and
+puzzle content, and all related documentation, is the proprietary work of
+Malek Hassan Ashour. All rights are reserved.
+
+1. NO LICENSE IS GRANTED to copy, modify, merge, publish, distribute,
+   sublicense, or sell copies of this software's source code, in whole or in
+   part, except with the prior express written permission of the copyright
+   holder.
+
+2. NOTHING IN THIS LICENSE AFFECTS the rights granted by the licenses of the
+   third-party components that accompany the distributed application,
+   specifically:
+     a. The Stockfish chess engine binaries (GNU GPL v3) bundled as
+        UNMODIFIED standalone executables under resources/engines/, which
+        remain fully governed by the GPLv3 — see THIRD_PARTY_LICENSES.md
+        and resources/engines/COPYING.txt.
+     b. Electron/Chromium/Node.js components governed by their own
+        MIT/BSD-style licenses and bundled notice files
+        (LICENSE.electron.txt, LICENSES.chromium.html).
+
+3. This license notice does not limit or revoke any right you may have under
+   applicable mandatory law (e.g., fair use).
+
+Contact for licensing inquiries: Malek Hassan Ashour.
+
+Development tools used (technical information only, no ownership implied):
+Electron, TypeScript, Vite, esbuild, electron-builder, Vitest, ESLint.

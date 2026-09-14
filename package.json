@@ -1,0 +1,37 @@
+{
+  "name": "chess-vanguard",
+  "productName": "Chess Vanguard",
+  "version": "1.1.0",
+  "description": "Chess Vanguard — Offline-first chess academy, puzzles and engine play. © 2026 Malek Hassan Ashour.",
+  "main": "build/main.js",
+  "author": "Malek Hassan Ashour",
+  "license": "SEE LICENSE IN LICENSE",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test:unit": "vitest run tests/unit --reporter=default",
+    "test:perft": "vitest run tests/perft --reporter=default",
+    "test:integration": "vitest run tests/integration --reporter=default",
+    "test:smoke": "node scripts/smoke.mjs",
+    "fetch:engine": "node scripts/fetch-engine.mjs",
+    "build": "node scripts/build.mjs",
+    "start": "node scripts/start.mjs",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/node": "^20.17.0",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "esbuild": "^0.24.2",
+    "eslint": "^9.17.0",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.67.0",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.8"
+  }
+}
